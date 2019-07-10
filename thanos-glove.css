@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+}
+
+#main {
+    width: 1366px;
+    height: 457px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-header {
+    display: -webkit-flex;
+    display: flex;
+    height: 70px;
+    padding: 20px 0px 0px 10px;
+}
+
+.flex-header-1 {
+    display: -webkit-flex;
+    display: flex;
+    align-items:center;
+    width: 80%;
+    height:70px;
+}
+
+.flex-header-1 input{
+    border-color: rgb(229, 232, 238);
+    border-style:solid;
+    height:50%; 
+    font-size: 17px; 
+    padding-left: 15px; 
+    margin: 5px; 
+    width: 680px; 
+    border-radius: 15px;
+    border-width: 1px;
+    outline:none;
+}
+
+.flex-header-1 input:hover{
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+
+.flex-header-2 {
+    display: -webkit-flex;
+    display: flex;
+    align-items:center;
+    flex-direction: row-reverse;
+    width: 20%;
+    height:70px;
+    padding-right: 20px;
+}
+
+.flex-navbar {
+    display: -webkit-flex;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+}
+
+.navbar-taglist{
+    width: 50%;
+}
+
+.navbar-taglist a{
+    display: inline-block;
+    color: black;
+    width: 12.5%;
+    text-align: center;
+    padding: 5px 0px 8px 0px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar-taglist a:hover{
+    color: blue;
+    border-bottom: 3px solid blue;
+}
+
+#nohover {
+    border:none;
+}
+
+.flex-content-container {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex-content-container-left {
+    width: 10%;
+}
+
+.flex-content-container-middle {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 5px;
+}
+
+.search-result-title {
+    color: blue;
+    text-decoration: none;
+}
+
+.search-result-title:hover {
+    text-decoration: underline;
+}
+
+
+
+.search-link-color {
+    color:darkgreen;
+}
+
+.left-div-block {
+    height: 20%;
+    margin: 5px;
+    overflow: hidden;
+} 
+.left-div-block p {
+    line-height: 18px;
+    margin: 8px 0px 0px 0px;
+    overflow: hidden;
+} 
+
+
+.flex-content-container-right {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 40%;
+    align-items:center;   
+    margin-top: 30px;
+}
+
+.fakeimg {
+	border:3px solid #A52A2A;
+    width: 20%;
+    padding: 5px ;
+    margin: 10px;
+}
+
+
+.footer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    height: 70px;
+}
+
+
+
+
+/*响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, */
+@media screen and (max-width: 850px) {
+    .navbar-taglist{
+        width: 100%;
+    }
+    .flex-content-container, .flex-navbar{   
+        flex-direction: column;
+    }
+    .flex-content-container-middle {
+        width: 100%;
+    }
+    .flex-content-container-right {
+        width: 100%; 
+    }
+} 
