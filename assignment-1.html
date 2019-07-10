@@ -14,7 +14,7 @@ $(document).ready(function(){
   $("#glove").click(async function(){
     for(var i = 0; i <ids.length; i++) {
         movetoEle (i);
-        await sleep(2000);
+        await sleep(3000);
         hidediv(i);
     }
   });
@@ -30,7 +30,7 @@ function hidediv(i){
 
 function movetoEle (i) {
     var p = $("#"+ids[i]).position().top -25 ;
-    $('html, body').animate({ scrollTop: p+'px'}, 1000);
+    $('html, body').animate({ scrollTop: p+'px'}, 1500);
 }
 
 // function hidediv(i){
