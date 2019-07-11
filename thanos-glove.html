@@ -11,7 +11,7 @@
 <script>
 
 function clickGone() {
-
+    // An array of all elements that may disappear.
     let ids = ["c-11", "c-12", "c-13","c-14","c-15","c-16","c-17", "c-18", "c-19","c-110",
            "c-21", "c-22","n-1","h-1","h-2"];
     const originLength = ids.length;
@@ -21,21 +21,24 @@ function clickGone() {
         while(ids.length*2 > originLength ){
             var i = Math.floor(Math.random() * ids.length);
 
+            // Find the best position for scorll bar to go.
             var p = $("#"+ids[i]).position().top -25 ;
             $('html, body').animate({ scrollTop: p+'px'}, 2000);
         
             await sleep(3000);
-        
+            
+            // Make a target element disappear.
             $("#"+ids[i]).animate({opacity:0});
         
             await sleep(1000);
 
+            // remove this element from the array.
             ids.splice(i,1);
         }
   });
 });
 }
-clickGone();
+clickGone(); // Run the tharnos
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -60,13 +63,13 @@ function sleep(ms) {
 <body>
     <div id="h-0" class="flex-header">
         <div id="h-1" class="flex-header-1">
-            <img src="google-icon.png" style="max-width:100%; max-height:100%;">
+            <img src="pictures/google-icon.png" style="max-width:100%; max-height:100%;">
             <input type="text">           
         </div>
 
         <div id="h-2" class="flex-header-2"> 
-            <img src="google-account-icon.png" style="max-width:50%; max-height:50%;">
-            <img src="google-app-icon.jpg" style="max-width:50%; max-height:50%;">
+            <img src="pictures/google-account-icon.png" style="max-width:50%; max-height:50%;">
+            <img src="pictures/google-app-icon.jpg" style="max-width:50%; max-height:50%;">
         </div>
     </div>
     
@@ -167,7 +170,7 @@ function sleep(ms) {
                     <h2 style="padding-left: 10px">World Wide Web <br/>Consortium</h2>
                 </div>
                 <div style="width:50%; display:flex; flex-direction: row-reverse; align-items: center">
-                    <img src="w3c-icon.png" style="height: 80%" >
+                    <img src="pictures/w3c-icon.png" style="height: 80%" >
                 </div> 
             </div> 
             <div id="c-22" style="width: 90%; border:1px solid lightgray;">
@@ -183,11 +186,11 @@ function sleep(ms) {
                 </p>
             </div>   
             <div id="c-23" style="width: 90%; display: flex; flex-wrap: wrap; border:1px solid lightgray;">
-                <img id="c-231" class="fakeimg" src="IETF-icon.png">
-                <img id="c-232" class="fakeimg" src="Tim-photo.jpg">
-                <img id="c-233" class="fakeimg" src="XML.pic">
-                <img id="c-234" class="fakeimg" src="ICANN-icon.png">
-                <img id="c-235" class="fakeimg" src="gg1.jpeg">
+                <img id="c-231" class="fakeimg" src="pictures/IETF-icon.png">
+                <img id="c-232" class="fakeimg" src="pictures/Tim-photo.jpg">
+                <img id="c-233" class="fakeimg" src="pictures/XML.pic">
+                <img id="c-234" class="fakeimg" src="pictures/ICANN-icon.png">
+                <img id="c-235" class="fakeimg" src="pictures/gg1.jpeg">
             </div>     
         </div>
     </div>

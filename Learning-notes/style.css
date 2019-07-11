@@ -1,0 +1,74 @@
+div {
+    border:1px solid #000;
+    margin: 20px;
+}
+
+#labdiv {
+    height: 400px;
+    width: 800px;
+    background-color: gray;
+    border:1px solid #000;
+    border-radius: 10px;
+}
+
+p {
+    font-family: serif;
+    font-size: 12px;
+    color: blue
+}
+
+a:hover {
+    color: black;
+    background: green;
+}
+
+#div-test {
+    color: red;
+    background-color: pink;
+}
+
+.listtest {
+    background-color: aqua;   
+}
+
+div > p {
+    background-color: yellowgreen;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color:white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+#fakebox {
+    background-color: rgb(117, 117, 117);
+    border-radius: 22px;
+    cursor: text;
+    font-size: 18px;
+    height: 44px;
+    line-height: 36px;
+    margin: 0 auto;
+    max-width: 560px;
+    opacity: 1;
+    position: relative;
+    transition: background-color 300ms ease-in-out, opacity 200ms;
+}
