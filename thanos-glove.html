@@ -19,6 +19,7 @@ function clickGone() {
     $(document).ready(function(){
     $("#glove").click(async function(){
         while(ids.length*2 > originLength ){
+            // Generate random component index.
             var i = Math.floor(Math.random() * ids.length);
 
             // Find the best position for scorll bar to go.
